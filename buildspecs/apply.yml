@@ -11,7 +11,7 @@ phases:
   pre_build:
     commands:
       - echo Initializing Terraform...
-      - cd infrastructure/terraform
+      - cd infrastructure/app
       - terraform init
   build:
     commands:
