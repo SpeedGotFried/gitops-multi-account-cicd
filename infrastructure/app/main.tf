@@ -32,3 +32,13 @@ resource "aws_iam_role_policy_attachment" "lambda_basic" {
   role       = aws_iam_role.lambda_exec.name
   policy_arn = "arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
 }
+
+resource "aws_s3_bucket" "app_data" {
+  bucket        = "${var.project_name}-data-${var.environment}"
+  force_destroy = true
+
+  tags = {
+    Name        = "${var.project_name}-data"
+    Environment = var.environment
+  }
+}

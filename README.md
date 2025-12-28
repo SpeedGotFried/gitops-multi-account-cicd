@@ -39,7 +39,3 @@ This project demonstrates a real-world enterprise DevOps setup using **GitOps pr
 └── README.md          # You are here
 ```
 
-## 🧠 Interview Focus
-- **Enterprise Patterns**: How to structure pipelines for scale.
-- **Security**: Least-privilege IAM roles for pipelines.
-- **Resilience**: How to handle failed deployments safely.
